@@ -1,0 +1,178 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    background: url("/assets/img/background.png");
+    position: relative;
+    padding: 120px 0 0 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+body::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.paymentdocument {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    grid-template-columns: 30% 50%;
+    padding-bottom: 100px;
+}
+  
+@media (min-width: 1024px) {
+    body::before {
+      background-attachment: fixed;
+    }
+    
+}
+
+@media (max-width: 575px) {
+    #payment .optionsp img {
+      width: 20px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    
+    #payment .paymentdocument{
+        margin-bottom: -50px;
+        padding-top: -100px;
+    }
+    
+    #payment .paymentb{
+        background-size: 90%;
+        padding-top: 120px;
+
+    }
+    #payment h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+    #payment img {
+        margin-top: 5px;
+        text-align: center;
+        width: 100px;
+    }
+    #paypal .colomin{
+        margin-left: 10px;
+        padding-right: 18rem;
+    }
+    #paypal .classic {
+        font-size: 25px;
+    }
+    #paypal .paying {
+        font-size: 15px;
+        margin-right: 55px;
+    }
+    #paypal .payin {
+        font-size: 15px;
+    }
+    #paypal input{
+        width: 120px;
+    }
+    #paypal .paynext{
+        margin-left: 100px;
+        width: 6rem;
+        height: 3rem;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+}
+
+#paypal h2{
+    color: black;
+    font-weight: bold;
+}
+
+.paypaldocument {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    grid-template-columns: 30% 50%;
+    padding-bottom: 30rem;
+}
+
+.differ {
+    padding: 30px 30px 10px 30px;
+    font-size: 20px;
+    font-family: 'Tinos', serif;
+    color: black;
+}
+
+.fonter {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+} 
+
+.colomin {
+    margin-left: 50px;
+    float: left;
+    width: 50%;
+    background-color: rgba(245,169,169,255);
+    border-radius: 20px;
+}
+
+.banker {
+    width: 120px;
+    height: 100px;
+    margin-left: 20px;
+    float: left;
+}
+
+.banks {
+    align-items: center; 
+}
+
+.classic {
+    margin-left: 10rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+
+.formpay {
+    display: grid;
+}
+
+.payin {
+    margin-right: 50px;
+    margin-left: 30px;
+    float: left;
+    font-size: 25px;
+    color: black;
+}
+
+.paying {
+    margin-right: 163px;
+    margin-left: 30px;
+    float: left;
+    font-size: 25px;
+    color: black;
+}
+
+.pays {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.paynext {
+    width: 15rem;
+    height: 5rem;
+    border-color: white;
+    margin-bottom: 50px;
+    font-size: 40px;
+}

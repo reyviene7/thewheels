@@ -1,0 +1,128 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    background: url("/assets/img/background.png");
+    position: relative;
+    padding: 120px 0 0 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+body::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.paymentdocument {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    grid-template-columns: 30% 50%;
+    padding-bottom: 100px;
+    padding-top: 1px;
+}
+  
+@media (min-width: 1024px) {
+    body::before {
+      background-attachment: fixed;
+    }
+    
+}
+
+@media (max-width: 575px) {
+    #payment .optionsp img {
+      width: 20px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    
+    #printsuccess .paymentdocument{
+        margin-bottom: -50px;
+        padding-top: -100px;
+    }
+    
+    #printsuccess .paymentb{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    #printsuccess .printing {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #printsuccess .nextd {
+        width: 100px;
+        height: 50px;
+    }
+
+    #printsuccess img {
+        margin-top: 20px;
+        text-align: center;
+        width: 50px;
+    }
+    
+}
+
+#payment h2 {
+    color: black;
+    font-weight: bold;
+}
+
+.fonter {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+} 
+.paymentb {
+    background-color: #F17575;
+    text-align: center;
+    margin: 20px 200px 0px 200px;
+    border-radius: 20px;
+}
+.nextd {
+    width: 10rem;
+    height: 4rem;
+    border-radius: 50px;
+    border-color: white;
+    margin-bottom: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.printing {
+    color: black;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.listpayment li {
+    list-style: none;
+}
+
+.optionsp {
+    margin-top: 20px;
+   width: 50px;
+   text-align: center;
+   align-items: center;
+}
+
+#printsuccess h2{
+    color: black;
+    font-weight: bold;
+}
+
+
+

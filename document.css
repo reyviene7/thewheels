@@ -1,0 +1,131 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    background: url("/assets/img/hero-bg.jpg");
+    position: relative;
+    padding: 120px 0 0 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+body::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+  
+@media (min-width: 1024px) {
+    body::before {
+      background-attachment: fixed;
+    }
+}
+
+h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+h2{
+    color: #fff;
+}
+
+.document h2{
+    color: #fff;
+    font-weight: bold;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    
+}
+
+.camera {
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    padding-top: 15px;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 20px;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+.camera1 {
+    width: 60px;
+    height: 60px;
+}
+
+
+.camera1-first{
+    background-color: white;
+    text-align: center;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    align-items: center;
+    text-align: center;
+}
+
+.backgroundcam{
+    float: right;   
+    padding: 3rem 3rem 1rem 3rem; 
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #fff;
+    background-position: center center;
+    align-items: center;
+    text-align: center; 
+}
+.upload {
+    align-items: center; 
+}
+
+.upload1 {
+    width: 50px;
+    height: 50px;
+}
+
+
+.upload-text {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#cameras {
+    align-items: center;
+    text-align: center;
+
+}
+
+.nextd {
+    width: 10rem;
+    height: 4rem;
+    border-radius: 50px;
+    border-color: white;
+    margin-bottom: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.nextpointd{
+    text-align: center;
+}
+
